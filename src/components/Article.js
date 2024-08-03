@@ -17,12 +17,12 @@ const getReadTimeIndicator = (minutes) => {
 };
 
     return (
-        <div>
+        <article>
             <h3 style={{color: "pink"}}>{title}</h3>
-            {date ? <p>{date} : {minutes} min read</p> : "January 1, 1970"}
+            {date ? <small>{date} : {minutes} min read</small> : "January 1, 1970"}
             <p>{getReadTimeIndicator(minutes)}</p>
             <p>{preview}</p>
-        </div>
+        </article>
     )
 }
 
